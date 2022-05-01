@@ -6,22 +6,24 @@ import android.os.Bundle
 
 import android.util.Log
 import android.widget.*
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.finalproject.DrinkData
-import com.example.finalproject.Fetch
-import com.example.finalproject.R
-import kotlinx.android.synthetic.main.activity_five.*
-import kotlinx.android.synthetic.main.activity_two.*
-
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class DrinkPage : AppCompatActivity() {
 
-    private val ingredientsList = listOf("Light rum", "Applejack", "Gin", "Dark rum")
+    private val ingredientsList = listOf(
+        "Light rum",
+        "Applejack",
+        "Gin",
+        "Dark rum",
+        "Sweet Vermouth",
+        "Strawberry schnapps",
+        "Scotch",
+        "Apricot brandy",
+        "Triple sec",
+        "Southern Comfort",
+        "Orange bitters",
+        "Brandy",
+        "Lemon vodka",
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -9,6 +9,5 @@ data class DrinkData(
 data class Drink(
     @SerializedName("strDrink") val drink_name : String,
     @SerializedName("strDrinkThumb") val img : String,
-    //@SerializedName("idDrink") val id : Int,
 ){}
 
