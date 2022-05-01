@@ -1,14 +1,14 @@
 package com.example.finalproject
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.drink.view.*
-
-// Adapter for the list of restaurants
 
 class DrinkAdapter(val context: Context, val item: List<Drink>) : RecyclerView.Adapter<DrinkAdapter.ViewHolder>(){
 
@@ -36,6 +36,14 @@ class DrinkAdapter(val context: Context, val item: List<Drink>) : RecyclerView.A
             }
             else {
                 Glide.with(itemView).load(d.img).into(itemView.img)
+            }
+
+            itemView.setOnClickListener {
+                Log.d("TAGI", "clicked ${d.drink_name}")
+
+                val myIntent = Intent(context, ActivitySix::class.java)
+                myIntent.putExtra("drink", d.drink_name)
+                context.startActivity(myIntent)
             }
         }
     }

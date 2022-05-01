@@ -1,8 +1,10 @@
 package com.example.finalproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_five.*
 import retrofit2.Call
@@ -27,7 +29,7 @@ class ActivityFive : AppCompatActivity() {
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-        val drink = retrofit.create(Fetch::class.java)
+        val drink = retrofit.create(fetch::class.java)
 
         // call the api and search!
         if (selectedItem != null) {
