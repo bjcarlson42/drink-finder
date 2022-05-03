@@ -10,20 +10,10 @@ import android.widget.*
 class DrinkPage : AppCompatActivity() {
 
     private val ingredientsList = listOf(
-        "Light rum",
-        "Applejack",
-        "Gin",
-        "Dark rum",
-        "Sweet Vermouth",
-        "Strawberry schnapps",
-        "Scotch",
-        "Apricot brandy",
-        "Triple sec",
-        "Southern Comfort",
-        "Orange bitters",
-        "Brandy",
-        "Lemon vodka",
+        "7-Up","Absolut Citron","Ale","Amaretto","Angelica root","Apple brandy","Apple cider","Apple juice","Applejack","Apricot brandy","Berries","Bitters","Blackberry brandy","Blended whiskey","Bourbon","Brandy","Cantaloupe","Carbonated water","Champagne","Cherry brandy","Chocolate liqueur","Chocolate syrup","Chocolate","Cider","Cocoa powder","Coffee brandy","Coffee liqueur","Coffee","Cognac","Cranberries","Cranberry juice","Creme de Cacao","Creme der Cassis","Dark rum","Dry Vermouth","Dubonnet Rouge","Egg yolk","Egg","Espresso","Everclear","Firewater","Galliano","Gin","Ginger","Grape juice","Grapefruit juice","Grapes","Grenadine","Heavy cream","Irish cream","Irish whiskey","Johnnie Walker","Kahlua","Kiwi","Lager","Lemon juice","Lemon vodka","Lemon","Lemonade","Light rum","Lime juice","Lime","Mango","Midori melon liqueur","Milk","Orange bitters","Orange","Ouzo","Peach Vodka","Peach nectar","Peppermint schnapps","Pineapple juice","Pisco","Port","Red wine","Ricard","Rum","Sambuca","Scotch","Sherry","Sloe gin","Southern Comfort","Spiced rum","Sprite","Strawberries","Strawberry schnapps","Sugar syrup","Sugar","Sweet Vermouth","Tea","Tequila","Tomato juice","Triple sec","Vodka","Water","Watermelon","Whiskey","Yoghurt"
     )
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
