@@ -37,10 +37,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(mapIntent)
     }
 
-    fun openmapsactivity(view: View){
-        val myIntent = Intent(this, MapsActivity::class.java)
-        startActivity(myIntent)
-    }
+//    fun openmapsactivity(view: View){
+//        val myIntent = Intent(this, MapsActivity::class.java)
+//        startActivity(myIntent)
+//    }
 
 
 }
