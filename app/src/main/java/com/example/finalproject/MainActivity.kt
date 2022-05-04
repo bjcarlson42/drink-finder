@@ -1,6 +1,7 @@
 package com.example.finalproject
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,10 +10,14 @@ import android.view.View
 class MainActivity : AppCompatActivity() {
     private val TAG = "MainActivity"
 
+    var myMediaPlayer : MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        myMediaPlayer = MediaPlayer.create(this, R.raw.pour)
+        myMediaPlayer?.start()
     }
 
     fun opensecondactivity(view: View){
@@ -31,4 +36,11 @@ class MainActivity : AppCompatActivity() {
         mapIntent.setPackage("com.google.android.apps.maps")
         startActivity(mapIntent)
     }
+
+    fun openmapsactivity(view: View){
+        val myIntent = Intent(this, MapsActivity::class.java)
+        startActivity(myIntent)
+    }
+
+
 }
