@@ -47,45 +47,107 @@ class ActivitySix : AppCompatActivity() {
                     else {
                         Glide.with(applicationContext).load(body.drinks[0].drink_image).into(image)
                     }
+
+                    // check if the ingredient or measure is null. There may be an ingredient but not a corresponding measure.
                     if (body.drinks[0].strIngredient1 != null) {
-                        one.text =
-                            "${body.drinks[0].strIngredient1} - ${body.drinks[0].strMeasure1}"
+                        if (body.drinks[0].strMeasure1 != null) {
+                            one.text =
+                                "1. ${body.drinks[0].strIngredient1} - ${body.drinks[0].strMeasure1}"
+                        } else {
+                            one.text =
+                                "1. ${body.drinks[0].strIngredient1}"
+                        }
+
                     }
 
                     if (body.drinks[0].strIngredient2 != null) {
-                        two.text = "${body.drinks[0].strIngredient2} - ${body.drinks[0].strMeasure2}"
+                        if (body.drinks[0].strMeasure2 != null) {
+                            two.text =
+                                "2. ${body.drinks[0].strIngredient2} - ${body.drinks[0].strMeasure2}"
+                        } else {
+                            two.text =
+                                "2. ${body.drinks[0].strIngredient2}"
+                        }
                     }
 
                     if (body.drinks[0].strIngredient3 != null) {
-                        three.text = "${body.drinks[0].strIngredient3} - ${body.drinks[0].strMeasure3}"
+                        if (body.drinks[0].strMeasure3 != null) {
+                            three.text =
+                                "3. ${body.drinks[0].strIngredient3} - ${body.drinks[0].strMeasure3}"
+                        } else {
+                            three.text =
+                                "3. ${body.drinks[0].strIngredient3}"
+                        }
                     }
 
                     if (body.drinks[0].strIngredient4 != null) {
-                        four.text = "${body.drinks[0].strIngredient4} - ${body.drinks[0].strMeasure4}"
+                        if (body.drinks[0].strMeasure4 != null) {
+                            four.text =
+                                "4. ${body.drinks[0].strIngredient4} - ${body.drinks[0].strMeasure4}"
+                        } else {
+                            four.text =
+                                "4. ${body.drinks[0].strIngredient4}"
+                        }
                     }
 
                     if (body.drinks[0].strIngredient5 != null) {
-                        five.text = "${body.drinks[0].strIngredient5} - ${body.drinks[0].strMeasure5}"
+                        if (body.drinks[0].strMeasure5 != null) {
+                            five.text =
+                                "5. ${body.drinks[0].strIngredient5} - ${body.drinks[0].strMeasure5}"
+                        } else {
+                            five.text =
+                                "5. ${body.drinks[0].strIngredient5}"
+                        }
                     }
 
                     if (body.drinks[0].strIngredient6 != null) {
-                        six.text = "${body.drinks[0].strIngredient6} - ${body.drinks[0].strMeasure6}"
+                        if (body.drinks[0].strMeasure6 != null) {
+                            six.text =
+                                "6. ${body.drinks[0].strIngredient6} - ${body.drinks[0].strMeasure6}"
+                        } else {
+                            six.text =
+                                "6. ${body.drinks[0].strIngredient6}"
+                        }
                     }
 
                     if (body.drinks[0].strIngredient7 != null) {
-                        seven.text = "${body.drinks[0].strIngredient7} - ${body.drinks[0].strMeasure7}"
+                        if (body.drinks[0].strMeasure7 != null) {
+                            seven.text =
+                                "7. ${body.drinks[0].strIngredient7} - ${body.drinks[0].strMeasure7}"
+                        } else {
+                            seven.text =
+                                "7. ${body.drinks[0].strIngredient7}"
+                        }
                     }
 
                     if (body.drinks[0].strIngredient8 != null) {
-                        eight.text = "${body.drinks[0].strIngredient8} - ${body.drinks[0].strMeasure8}"
+                        if (body.drinks[0].strMeasure8 != null) {
+                            eight.text =
+                                "8. ${body.drinks[0].strIngredient8} - ${body.drinks[0].strMeasure8}"
+                        } else {
+                            eight.text =
+                                "8. ${body.drinks[0].strIngredient8}"
+                        }
                     }
 
                     if (body.drinks[0].strIngredient9 != null) {
-                        nine.text = "${body.drinks[0].strIngredient9} - ${body.drinks[0].strMeasure9}"
+                        if (body.drinks[0].strMeasure9 != null) {
+                            nine.text =
+                                "9. ${body.drinks[0].strIngredient9} - ${body.drinks[0].strMeasure9}"
+                        } else {
+                            nine.text =
+                                "9. ${body.drinks[0].strIngredient9}"
+                        }
                     }
 
                     if (body.drinks[0].strIngredient10 != null) {
-                        ten.text = "${body.drinks[0].strIngredient10} - ${body.drinks[0].strMeasure10}"
+                        if (body.drinks[0].strMeasure10 != null) {
+                            ten.text =
+                                "10. ${body.drinks[0].strIngredient10} - ${body.drinks[0].strMeasure10}"
+                        } else {
+                            ten.text =
+                                "10. ${body.drinks[0].strIngredient10}"
+                        }
                     }
                 }
 
