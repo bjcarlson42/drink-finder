@@ -8,8 +8,8 @@
 
     <ScrollView
         android:id="@+id/scroll"
-        android:layout_width="416dp"
-        android:layout_height="646dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_margin="4dp"
         android:padding="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +41,9 @@
                 android:layout_marginTop="26dp"
                 android:layout_marginBottom="20dp"
                 android:textAlignment="center"
-                android:textSize="34sp" />
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/one"
@@ -49,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="0dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -58,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -67,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -76,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -85,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -94,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -103,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -112,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -121,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
@@ -130,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
         </LinearLayout>
