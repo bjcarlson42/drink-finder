@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
+
 class MainActivity : AppCompatActivity() {
     private val TAG = "MainActivity"
 
@@ -29,18 +30,18 @@ class MainActivity : AppCompatActivity() {
         val myIntent = Intent(this, ActivityThree::class.java)
         startActivity(myIntent)
     }
+//
+//    fun openfourthactivity(view: View){
+//        val gmmIntentUri = Uri.parse("geo:0,0?q=bars")
+//        val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+//        mapIntent.setPackage("com.google.android.apps.maps")
+//        startActivity(mapIntent)
 
-    fun openfourthactivity(view: View){
-        val gmmIntentUri = Uri.parse("geo:0,0?q=bars")
-        val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-        mapIntent.setPackage("com.google.android.apps.maps")
-        startActivity(mapIntent)
+
+    fun openmapsactivity(view: View){
+        val myIntent = Intent(this, MapsActivity::class.java)
+        startActivity(myIntent)
     }
-
-//    fun openmapsactivity(view: View){
-//        val myIntent = Intent(this, MapsActivity::class.java)
-//        startActivity(myIntent)
-//    }
 
 
 }
