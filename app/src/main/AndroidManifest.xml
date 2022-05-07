@@ -3,6 +3,8 @@
     package="com.example.finalproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -12,17 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject">
 
-        <!--
-             TODO: Before you run your application, you need a Google Maps API key.
-
-             To get one, follow the directions here:
-
-                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC7sDk0Q1hdl3_wxg9XKw4FJvrhQVBFwuw" />
@@ -30,24 +21,30 @@
         <activity
             android:name=".MapsActivity"
             android:exported="false"
-            android:label="@string/title_activity_maps" />
+            android:parentActivityName=".MainActivity"
+            android:label="Find A Bar" />
         <activity
             android:name=".ActivitySix"
+            android:label="Drink Detail"
             android:exported="false" />
         <activity
             android:name=".ActivityFive"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityFour"
+            android:parentActivityName=".DrinkPage"
+            android:label="Drink List"
             android:exported="false" />
         <activity
             android:name=".ActivityThree"
+            android:parentActivityName=".MainActivity"
+            android:label="Favorite Drinks"
             android:exported="false" />
         <activity
             android:name=".DrinkPage"
+            android:parentActivityName=".MainActivity"
+            android:label="Select An Ingredient"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:label="Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
