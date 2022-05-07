@@ -8,11 +8,10 @@
 
     <TextView
         android:id="@+id/drink_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="262dp"
+        android:layout_height="46dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="138dp"
         android:text="Vodka Lemonade"
         android:textAlignment="textStart"
         android:textSize="20sp"
