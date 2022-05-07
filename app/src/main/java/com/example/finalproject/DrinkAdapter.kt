@@ -2,6 +2,7 @@ package com.example.finalproject
 
 import android.content.Context
 import android.content.Intent
+import android.media.MediaPlayer
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.activity_three.*
 import java.lang.reflect.Type
+var myMediaPlayer : MediaPlayer? = null
 
 class DrinkAdapter(val context: Context, val item: List<Drink>) : RecyclerView.Adapter<DrinkAdapter.ViewHolder>(){
 
@@ -32,6 +34,7 @@ class DrinkAdapter(val context: Context, val item: List<Drink>) : RecyclerView.A
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         init {
+
             // on long press, save the drink
             itemView.setOnLongClickListener {
                 val drinkToAdd = item[adapterPosition].drink_name
@@ -39,8 +42,11 @@ class DrinkAdapter(val context: Context, val item: List<Drink>) : RecyclerView.A
 
                 var l = getArrayList("favs")
                 if (l != null) {
-                    l.add(drinkToAdd)
-                    saveArrayList(l, "favs")
+
+                    if (!l.contains(drinkToAdd)) {
+                        l.add(drinkToAdd)
+                        saveArrayList(l, "favs")
+                    }
                 } else {
                     var list = ArrayList<String?>()
                     list.add(drinkToAdd)
@@ -49,6 +55,7 @@ class DrinkAdapter(val context: Context, val item: List<Drink>) : RecyclerView.A
 
                 return@setOnLongClickListener true
             }
+
         }
 
         val FILE_NAME = "favList"

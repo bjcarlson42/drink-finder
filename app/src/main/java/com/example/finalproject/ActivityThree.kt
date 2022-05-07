@@ -1,6 +1,7 @@
 package com.example.finalproject
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,6 +16,7 @@ class ActivityThree : AppCompatActivity() {
     private val favList = ArrayList<String?>() // This is the list of tasks
     lateinit var myAdapter: ArrayAdapter<String> // Adapter for the ListView
     private val FILE_NAME = "favList" // File name for shared preferences
+    var myMediaPlayer : MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,6 +65,8 @@ class ActivityThree : AppCompatActivity() {
             saveArrayList(favList, FILE_NAME)
             // update shared preferences
 
+                myMediaPlayer = MediaPlayer.create(this, R.raw.unlike)
+                myMediaPlayer?.start()
 
             myAdapter.notifyDataSetChanged()
 
