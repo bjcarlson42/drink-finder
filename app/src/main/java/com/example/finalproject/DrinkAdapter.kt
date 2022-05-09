@@ -25,8 +25,8 @@ class DrinkAdapter(val context: Context, val item: List<Drink>) : RecyclerView.A
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val restaurants = item[position]
-        holder.bind(restaurants)
+        val drinks = item[position]
+        holder.bind(drinks)
     }
 
     override fun getItemCount() = item.size
@@ -52,7 +52,8 @@ class DrinkAdapter(val context: Context, val item: List<Drink>) : RecyclerView.A
                     list.add(drinkToAdd)
                     saveArrayList(list, "favs")
                 }
-
+                myMediaPlayer = MediaPlayer.create(itemView.context, R.raw.liked)
+                myMediaPlayer?.start()
                 return@setOnLongClickListener true
             }
 

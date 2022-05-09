@@ -11,14 +11,10 @@ import android.view.View
 class MainActivity : AppCompatActivity() {
     private val TAG = "MainActivity"
 
-    var myMediaPlayer : MediaPlayer? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        myMediaPlayer = MediaPlayer.create(this, R.raw.pour)
-        myMediaPlayer?.start()
     }
 
     fun opensecondactivity(view: View){

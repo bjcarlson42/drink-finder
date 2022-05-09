@@ -39,7 +39,7 @@ class ActivityFive : AppCompatActivity() {
                     Log.d("fail", response.toString())
                     Log.d("TAGI", body.toString())
 
-                    restaurant.addAll(body.drinks)
+                    drinks.addAll(body.drinks)
                     adapter.notifyDataSetChanged()
                 }
 
@@ -53,6 +53,6 @@ class ActivityFive : AppCompatActivity() {
 }
 
     // what holds that data
-    val restaurant = mutableListOf<Drink>()
-    val adapter = DrinkAdapter(this, restaurant)
+    val drinks = mutableListOf<Drink>()
+    val adapter = DrinkAdapter(this, drinks)
 }
